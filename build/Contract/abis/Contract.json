@@ -209,6 +209,19 @@
   },
   {
     "inputs": [],
+    "name": "EPNS_COMM_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "ItemCounter",
     "outputs": [
       {
@@ -300,7 +313,7 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_cosmoAddress",
+        "name": "_cycliAddress",
         "type": "address"
       },
       {

@@ -337,6 +337,29 @@ export class Contract extends ethereum.SmartContract {
     return new Contract("Contract", address);
   }
 
+  EPNS_COMM_ADDRESS(): Address {
+    let result = super.call(
+      "EPNS_COMM_ADDRESS",
+      "EPNS_COMM_ADDRESS():(address)",
+      []
+    );
+
+    return result[0].toAddress();
+  }
+
+  try_EPNS_COMM_ADDRESS(): ethereum.CallResult<Address> {
+    let result = super.tryCall(
+      "EPNS_COMM_ADDRESS",
+      "EPNS_COMM_ADDRESS():(address)",
+      []
+    );
+    if (result.reverted) {
+      return new ethereum.CallResult();
+    }
+    let value = result.value;
+    return ethereum.CallResult.fromValue(value[0].toAddress());
+  }
+
   ItemCounter(): BigInt {
     let result = super.call("ItemCounter", "ItemCounter():(uint256)", []);
 
@@ -833,7 +856,7 @@ export class BuyItemCall__Inputs {
     this._call = call;
   }
 
-  get _cosmoAddress(): Address {
+  get _cycliAddress(): Address {
     return this._call.inputValues[0].value.toAddress();
   }
 
