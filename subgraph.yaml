@@ -6,9 +6,9 @@ dataSources:
     name: Contract
     network: mumbai
     source:
-      address: "0x906291Ca2Ac00eCb2CFd4616709271B470616079"
+      address: "0xFff0708d667Be5EFE51B301020d917688cAe4B55"
       abi: Contract
-      startBlock: 29187951
+      startBlock: 29207707
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6

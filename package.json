@@ -1,13 +1,13 @@
 {
-  "name": "cyclimate_v3",
+  "name": "cyclimate_v4",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ salviega/cyclimate_v3",
-    "create-local": "graph create --node http://localhost:8020/ salviega/cyclimate_v3",
-    "remove-local": "graph remove --node http://localhost:8020/ salviega/cyclimate_v3",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 salviega/cyclimate_v3",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ salviega/cyclimate_v4",
+    "create-local": "graph create --node http://localhost:8020/ salviega/cyclimate_v4",
+    "remove-local": "graph remove --node http://localhost:8020/ salviega/cyclimate_v4",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 salviega/cyclimate_v4",
     "test": "graph test"
   },
   "dependencies": {
